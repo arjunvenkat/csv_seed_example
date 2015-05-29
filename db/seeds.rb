@@ -9,7 +9,7 @@
 
     require 'csv'
 
-    csv_text = File.read('lib/seeds/real_estate_transactions.csv')
+    csv_text = File.read(Rails.root.join('lib', 'seeds', 'real_estate_transactions.csv'))
     csv = CSV.parse(csv_text, :headers => true)
     csv.each do |row|
       t = Transaction.new
