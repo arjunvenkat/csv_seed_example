@@ -21,7 +21,7 @@
       t.beds = row['beds']
       t.sq_feet = row['sq_feet']
       t.category = row['type']
-      t.sale_date = DateTime.parse(row['sale_date'])
+      t.sale_date = row['sale_date']
       t.price = row['price']
       t.lat = row['latitude']
       t.lng = row['longitude']
